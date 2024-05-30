@@ -264,16 +264,19 @@ useEffect(() => {
   <div className="d-flex gap-4">
 
  
-      <a href="/finalexpense" className="nav-link header-link">
-        Final Expense
-      </a>
-      <a href="/medicareadvantage" className="nav-link header-link">
-        Medicare Advantage
-      </a>
-      <a href="/affordablecareact" className="nav-link header-link">
-        Affordable Care Act
-      </a>
-   
+     
+      <Link to="/finalexpense" className="nav-link header-link">
+    Final Expense 
+    </Link>
+    <Link to="/insurehubdebt" className="nav-link header-link">
+          Insurehub Debt
+        </Link>
+    <Link to="/medicareadvantage" className="nav-link header-link">
+      Medicare Advantage
+    </Link>
+    <Link to="/affordablecareact" className="nav-link header-link">
+      Affordable Care Act
+    </Link>
     
   </div>
 </div>
@@ -283,11 +286,13 @@ useEffect(() => {
         </Navbar>
       </header>
       <main>
-        <Container className="mt-3">
+        <Container className='my-3'>
           <Outlet />
         </Container>
       </main>
-      <footer>
+     
+   <div >
+      <footer  style={{ fontWeight: 'bold', position: 'fixed', bottom: 0, width: '100%', backgroundColor: 'white' }}>
       {disappear &&
           <div style={{position:'absolute',width:'auto',height:'auto',background:'black',color:'white',bottom:'5%',left:'45%',padding:'2px 8px',borderRadius:'10px'}}>
 
@@ -297,8 +302,37 @@ useEffect(() => {
           </div>
 
           }
-        <div className="text-center">All rights reserved</div>
-      </footer>
+  <div className="text-center">All rights reserved for Concpt</div>
+  <div className="sub-header">
+    <div className="d-flex justify-content-center">
+      <div className="d-flex gap-4">
+        <Link to="/" className="nav-link header-link">
+          Home
+        </Link>
+        <Link to="/howwework" className="nav-link header-link">
+          How We Work
+        </Link>
+        <Link to="/getanswers" className="nav-link header-link">
+          Get Answers
+        </Link>
+        <Link to="/termsandconditions" className="nav-link header-link">
+          Terms and Conditions
+        </Link>
+        <Link to="/privacypolicy" className="nav-link header-link">
+          Privacy Policy
+        </Link>
+        <Link to="/contactus" className="nav-link header-link">
+          Contact Us
+        </Link>
+    
+        {/* <a href="/insurehubdebt" className="nav-link header-link">
+        Insurehub Debt
+      </a> */}
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
       
     </div>
   )

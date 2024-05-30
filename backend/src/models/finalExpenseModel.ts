@@ -7,7 +7,7 @@ export class FinalExpenseData {
   @prop({ required: true })
   public name!: string;
   
-  @prop({ required: true, unique: true })
+  @prop({ required: true })
   public email!: string;
   
   @prop({ required: true })

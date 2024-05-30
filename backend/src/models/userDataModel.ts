@@ -10,7 +10,7 @@ export class MedicareAdvantageData {
   @prop({ required: true })
   public lastName!: string;
   
-  @prop({ required: true, unique: true })
+  @prop({ required: true })
   public email!: string;
   
   @prop({ required: true })

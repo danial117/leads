@@ -5,7 +5,7 @@ export class User {
   public _id?: string
   @prop({ required: true })
   public name!: string
-  @prop({ required: true, unique: true })
+  @prop({ required: true })
   public email!: string
   @prop({ required: true })
   public password!: string
@@ -13,4 +13,4 @@ export class User {
   public isAdmin!: boolean
 }
 
-export const UserModel = getModelForClass(User)
+export const UserModel = getModelForClass(User) 

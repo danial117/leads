@@ -31,7 +31,12 @@ import MedicareAdvantagePage from './pages/MedicareAdvantagePage'
 import AffordableCareActPage from './pages/AffordableCareActPage'
 import FinalExpense from './pages/FinalExpensePage'
 import AffordableCareActPageZZZ from './pages/FinalExpensePage'
-
+import HowWeWorkPage from './pages/HowWeWorkPage'
+import InsurehubDebtPage from './pages/InsurehubDebtpage'
+import GetAnswersPage from './pages/GetAnswersPage'
+import ContactUsPage from './pages/ContactUsPage'
+import TermsAndConditionPage from './pages/TermsAndConditionPage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
@@ -49,6 +54,14 @@ const router = createBrowserRouter(
      <Route path="/medicareadvantage" element={<MedicareAdvantagePage />} />
      <Route path="/affordablecareact" element={<AffordableCareActPage />} />
      <Route path="/finalexpense" element={<FinalExpense />} />
+     <Route path="/insurehubdebt" element={<InsurehubDebtPage />} />
+     
+     <Route path="/howwework" element={<HowWeWorkPage />} />
+     <Route path="/getanswers" element={<GetAnswersPage />} />
+     <Route path="/termsandconditions" element={<TermsAndConditionPage />} />
+     <Route path="/privacypolicy" element={<PrivacyPolicyPage />} />
+     <Route path="/contactus" element={<ContactUsPage />} />
+
       </Route>
 
       {/* <Route path="dashboard" element={<Dashboard />} /> */}
